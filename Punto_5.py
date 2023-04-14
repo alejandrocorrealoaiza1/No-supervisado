@@ -1,6 +1,5 @@
 # The Logistic Regression is classification algorithm used when the output is categorical. 
 # The ideology behind the classification is finding the relationship between the features and probabilities. 
-# The results can be interpreted as likelihood that the data in the question belongs to a particular class.
 
 from sklearn.datasets import fetch_openml
 from sklearn.model_selection import train_test_split
@@ -31,3 +30,5 @@ model.fit(X_train_08, y_train_08)
 # VALIDACIÓN DEL MODELO
 accuracy = model.score(X_test_08, y_test_08)
 print(accuracy)
+
+""" EL MODELO TIENE UN PORCENTAJE DE EXACTITUD POR ENCIMA DEL 95 %, ES UN MUY BUEN ESTIMADOR"""
