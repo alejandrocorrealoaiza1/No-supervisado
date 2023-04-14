@@ -18,11 +18,13 @@ class SVD:
         # Decomposition
         U, s, V = np.linalg.svd(X, full_matrices=False)
 
+        self.U = U
+
         S = np.zeros((X.shape[0], X.shape[1]))
         S[:X.shape[0], :X.shape[0]] = np.diag(s)
 
         self.S = S[:, :self.n_components]
-        self.U = U
+        
         self.V= V[:self.n_components, :]
       
         # A tuple with one vector unitary (matrix is orthonornal), one matrix singular values, one matriz singular vectors
