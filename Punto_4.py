@@ -1,6 +1,3 @@
-print("ESOOOO ES")
-
-
 from Package.SVD import SVD
 import matplotlib.pyplot as plt
 from PIL import Image
