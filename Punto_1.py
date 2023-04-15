@@ -36,6 +36,4 @@ print(eigen)
 eigen = np.linalg.eig(inverted)
 print(eigen)
 
-"""Los valores propios de una matriz son los mismos
-los vectores propios de éstas tienen la misma magnitud con dirección parelala pero sentidos
-contrarios, es decir, que al sumarlos nos da un vector nulo"""
+"""""los vectores propios de éstas son los mismos"""
