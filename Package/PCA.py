@@ -34,3 +34,7 @@ class PCA:
         X_transformed = np.dot(X, self.components)
 
         return X_transformed
+    
+    def fit_transform(self, X):
+        self.fit(X)
+        return self.transform(X)
